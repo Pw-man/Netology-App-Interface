@@ -9,8 +9,12 @@ import UIKit
 
 class PostViewController: UIViewController {
 
+    var post: Post? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       title = post?.title
     }
 }
 

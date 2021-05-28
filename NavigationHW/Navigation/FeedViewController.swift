@@ -7,16 +7,18 @@
 
 import UIKit
 
+public struct Post {
+     var title: String
+ }
+
+var post = Post(title: "Selected Headline")
+
 class FeedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    public struct Post {
-         var title: String
-     }
-    var post = Post(title: "Последняя публикация")
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "lastPost" else {
             return
@@ -26,6 +28,7 @@ class FeedViewController: UIViewController {
         else {
             return
         }
-        postViewController.title = post.title
+        postViewController.post = post
+
 }
 }
