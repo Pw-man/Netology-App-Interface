@@ -25,15 +25,14 @@ class ProfileHeaderView: UIView {
         avatarImageView.clipsToBounds = true
         
         
-        //        fullNameLabel.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+        
         fullNameLabel.text = "Coolest Dog Ever"
         fullNameLabel.textColor = .black
         fullNameLabel.numberOfLines = 0
         
-        //        statusLabel.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+        
         statusLabel.textColor = .gray
         statusLabel.text = "Waiting for something"
-        //        statusLabel.isUserInteractionEnabled = false
         
         setStatusButton.layer.cornerRadius = 4
         setStatusButton.layer.shadowOffset = CGSize(width: 4, height: 4)
@@ -46,12 +45,11 @@ class ProfileHeaderView: UIView {
         setStatusButton.addTarget(self, action: #selector(statusButtonPressed), for: .touchUpInside)
         setStatusButton.addTarget(self, action: #selector(statusTextChanged), for: .editingChanged)
         
-        //        statusTextField.backgroundColor = .white
-        //        statusTextField.font = UIFont.systemFont(ofSize: 15, weight: .regular)
+        
         statusTextField.textColor = .black
         statusTextField.layer.cornerRadius = 12
         statusTextField.layer.borderWidth = 1
-        //        statusTextField.layer.borderColor = UIColor.black.cgColor
+        
     }
     
     private var statusText: String = " "

@@ -10,6 +10,7 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
+
     private(set) lazy var addFriendUIButton: UIButton = {
         let button = UIButton()
         button.setTitle("Add to friend's", for: .normal)
