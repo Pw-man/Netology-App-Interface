@@ -44,14 +44,14 @@
                                             <constraint firstAttribute="width" constant="120" id="ttI-Jp-S0S"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbB-d9-45n">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbB-d9-45n">
                                         <rect key="frame" x="152" y="98" width="222" height="17"/>
                                         <accessibility key="accessibilityConfiguration" label="statusLabel"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXc-eg-DcM">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXc-eg-DcM">
                                         <rect key="frame" x="152" y="27" width="222" height="21"/>
                                         <accessibility key="accessibilityConfiguration" label="fullNameLabel">
                                             <accessibilityTraits key="traits" staticText="YES"/>
@@ -83,10 +83,10 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="SbB-d9-45n" secondAttribute="trailing" constant="16" id="223-bg-7Pq"/>
                                     <constraint firstAttribute="trailing" secondItem="DXc-eg-DcM" secondAttribute="trailing" constant="16" id="29y-jC-Tdv"/>
-                                    <constraint firstItem="dVZ-Eo-348" firstAttribute="top" secondItem="SbB-d9-45n" secondAttribute="bottom" constant="10" id="3ec-SF-bkE"/>
+                                    <constraint firstItem="dVZ-Eo-348" firstAttribute="top" secondItem="SbB-d9-45n" secondAttribute="bottom" constant="5" id="3ec-SF-bkE"/>
                                     <constraint firstAttribute="trailing" secondItem="dVZ-Eo-348" secondAttribute="trailing" constant="16" id="4Z6-Jk-wtb"/>
                                     <constraint firstItem="DXc-eg-DcM" firstAttribute="top" secondItem="dDT-nh-JYf" secondAttribute="top" constant="27" id="6Dx-7Q-awE"/>
-                                    <constraint firstItem="SbB-d9-45n" firstAttribute="top" secondItem="DXc-eg-DcM" secondAttribute="bottom" constant="40" id="SYX-M4-Uwb"/>
+                                    <constraint firstItem="SbB-d9-45n" firstAttribute="top" secondItem="DXc-eg-DcM" secondAttribute="bottom" constant="50" id="SYX-M4-Uwb"/>
                                     <constraint firstAttribute="bottom" secondItem="IBT-Y0-wNM" secondAttribute="bottom" id="Sw2-2T-YQH"/>
                                     <constraint firstAttribute="trailing" secondItem="IBT-Y0-wNM" secondAttribute="trailing" constant="16" id="SwQ-s4-7VX"/>
                                     <constraint firstItem="IBT-Y0-wNM" firstAttribute="leading" secondItem="dDT-nh-JYf" secondAttribute="leading" constant="16" id="UAw-Gf-m1c"/>
