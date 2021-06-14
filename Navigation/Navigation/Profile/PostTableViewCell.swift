@@ -87,9 +87,11 @@ class PostTableViewCell: UITableViewCell {
             
             postLikesLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
             postLikesLabel.topAnchor.constraint(equalTo: postTextLabel.bottomAnchor, constant: 16),
+            postLikesLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16),
             
             postViewsLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-            postViewsLabel.topAnchor.constraint(equalTo: postTextLabel.bottomAnchor, constant: 16)
+            postViewsLabel.topAnchor.constraint(equalTo: postTextLabel.bottomAnchor, constant: 16),
+            postViewsLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16)
         ]
         NSLayoutConstraint.activate(constraints)
     }

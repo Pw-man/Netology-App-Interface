@@ -25,7 +25,9 @@ class ProfileViewController: UIViewController {
         view.addSubview(tableView)
         tableView.onAutoLayout()
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.register(PostTableViewCell.self, forCellReuseIdentifier: "cellId")
+        tableView.register(ProfileHeaderView.self, forHeaderFooterViewReuseIdentifier: reuseID)
         let constraints = [
             tableView.topAnchor.constraint(equalTo: view.topAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
@@ -53,9 +55,19 @@ extension UIViewController: UITableViewDataSource {
         cell.profilePost = Posts.postsArray[indexPath.row]
         return cell
     }
-    
 }
 
 extension UIViewController: UITableViewDelegate {
-    
+   
+    public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 220
+    }
+
+    public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView: ProfileHeaderView = tableView.dequeueReusableHeaderFooterView(withIdentifier: reuseID) as! ProfileHeaderView
+        
+        return headerView
+        
+        
+    }
 }
