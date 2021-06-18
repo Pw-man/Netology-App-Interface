@@ -18,7 +18,7 @@ class ProfileHeaderView: UITableViewHeaderFooterView {
     var setStatusButton = UIButton()
     var statusTextField = UITextField()
     
-
+    
     func subViewsSettings(){
         avatarImageView.layer.borderWidth = 3
         avatarImageView.layer.borderColor = UIColor.white.cgColor
@@ -43,7 +43,7 @@ class ProfileHeaderView: UITableViewHeaderFooterView {
         setStatusButton.layer.shadowOpacity = 0.7
         setStatusButton.setTitleColor(.white, for: .normal)
         setStatusButton.setTitle("Show Status", for: .normal)
-        setStatusButton.backgroundColor = .blue
+        setStatusButton.backgroundColor = .systemBlue
         setStatusButton.addTarget(self, action: #selector(statusButtonPressed), for: .touchUpInside)
         setStatusButton.addTarget(self, action: #selector(statusTextChanged), for: .editingChanged)
         setStatusButton.onAutoLayout()
@@ -65,14 +65,14 @@ class ProfileHeaderView: UITableViewHeaderFooterView {
         contentView.addSubview(setStatusButton)
         contentView.addSubview(fullNameLabel)
         
-    subViewsSettings()
+        subViewsSettings()
         
         let constraints = [
             avatarImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
             avatarImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16),
             avatarImageView.widthAnchor.constraint(equalToConstant: 120),
             avatarImageView.heightAnchor.constraint(equalToConstant: 120),
-
+            
             
             fullNameLabel.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: 16),
             fullNameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
@@ -91,8 +91,8 @@ class ProfileHeaderView: UITableViewHeaderFooterView {
             setStatusButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
             setStatusButton.heightAnchor.constraint(equalToConstant: 50),
             setStatusButton.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
-
-
+            
+            
         ]
         NSLayoutConstraint.activate(constraints)
     }

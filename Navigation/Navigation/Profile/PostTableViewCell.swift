@@ -30,7 +30,7 @@ class PostTableViewCell: UITableViewCell {
     }()
     
     private var postAuthorLabel: UILabel = {
-       var pal = UILabel()
+        var pal = UILabel()
         pal.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         pal.textColor = .black
         pal.numberOfLines = 2
@@ -39,7 +39,7 @@ class PostTableViewCell: UITableViewCell {
     }()
     
     private var postTextLabel: UILabel = {
-    var ptl = UILabel()
+        var ptl = UILabel()
         ptl.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         ptl.textColor = .systemGray
         ptl.numberOfLines = 0
@@ -48,7 +48,7 @@ class PostTableViewCell: UITableViewCell {
     }()
     
     private var postLikesLabel: UILabel = {
-    var pll = UILabel()
+        var pll = UILabel()
         pll.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         pll.textColor = .black
         pll.onAutoLayout()
@@ -57,14 +57,14 @@ class PostTableViewCell: UITableViewCell {
     }()
     
     private var postViewsLabel: UILabel = {
-    var pvl = UILabel()
+        var pvl = UILabel()
         pvl.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         pvl.textColor = .black
         pvl.onAutoLayout()
         pvl.sizeToFit()
         return pvl
     }()
-
+    
     private func setupViews() {
         contentView.addSubview(postViewsLabel)
         contentView.addSubview(postLikesLabel)
@@ -107,7 +107,7 @@ class PostTableViewCell: UITableViewCell {
     }
     
     
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }

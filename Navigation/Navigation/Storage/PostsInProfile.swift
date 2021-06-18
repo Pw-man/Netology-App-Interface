@@ -16,12 +16,6 @@ struct ProfilePost {
     var views: Int
 }
 
-struct TwoSectionScreen {
-    var headerTitle: String
-    var posts: ProfilePost
-
-}
-
 struct Posts {
     static let postsArray: [ProfilePost] = [robotiPost, forumPost, wwdcPost, teslaPost]
 }

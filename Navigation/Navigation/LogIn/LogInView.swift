@@ -26,7 +26,6 @@ class LogInView: UIView {
         passwordTextField.placeholder = "Password"
         passwordTextField.returnKeyType = .done
 
-
         nameTextField.textColor = .black
         nameTextField.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         nameTextField.tintColor = UIColor(named: "ColorSet")
@@ -41,11 +40,8 @@ class LogInView: UIView {
         passwordView.backgroundColor = .systemGray6
         passwordView.layer.cornerRadius = 10
         
-        
         laneView.backgroundColor = .lightGray
-        
-        
-        
+ 
     }
     
     override init(frame: CGRect) {
@@ -65,7 +61,7 @@ class LogInView: UIView {
         nameTextField.onAutoLayout()
         passwordTextField.onAutoLayout()
 
-
+        
         NSLayoutConstraint.activate([
             nameView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: .zero),
             nameView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: .zero),
@@ -97,16 +93,11 @@ class LogInView: UIView {
 
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        
-    }
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    }
+}
 
 
 
