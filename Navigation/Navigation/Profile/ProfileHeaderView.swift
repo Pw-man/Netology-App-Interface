@@ -33,7 +33,7 @@ class ProfileHeaderView: UITableViewHeaderFooterView {
         fullNameLabel.onAutoLayout()
         
         statusLabel.textColor = .gray
-        statusLabel.text = "Waiting for something"
+        statusLabel.text = "Waiting for something..."
         statusLabel.onAutoLayout()
         
         setStatusButton.layer.cornerRadius = 4
@@ -52,6 +52,7 @@ class ProfileHeaderView: UITableViewHeaderFooterView {
         statusTextField.layer.cornerRadius = 12
         statusTextField.layer.borderWidth = 1
         statusTextField.onAutoLayout()
+        statusTextField.placeholder = "Set your status"
     }
     
     

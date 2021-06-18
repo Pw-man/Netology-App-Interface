@@ -50,10 +50,23 @@ extension UIViewController: UITableViewDataSource {
         return Posts.postsArray.count
     }
     
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let pvc = PhotosViewController()
+        if indexPath.row == 0 {
+            self.navigationController?.pushViewController(pvc, animated: true)
+        }
+    }
+    
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell : PostTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as! PostTableViewCell
-        cell.profilePost = Posts.postsArray[indexPath.row]
-        return cell
+        switch indexPath.row {
+        case 0:
+            let cell = PhotosTableViewCell()
+            return cell
+        default:
+            let cell : PostTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as! PostTableViewCell
+            cell.profilePost = Posts.postsArray[indexPath.row]
+            return cell
+        }
     }
 }
 
